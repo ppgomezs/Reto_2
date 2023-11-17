@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstadisticaAgua"
+    android:background="@drawable/fondopantallas">
+
+    <ImageView
+        android:id="@+id/imgV_EstAg_enca"
+        android:layout_width="412dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/qencabezado_est_agua"
+        app:layout_constraintBottom_toTopOf="@+id/txtV_EstAg_cant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#324807"
+        android:contentDescription="@string/Imbtn_descriptionhome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/home2" />
+
+    <TextView
+        android:id="@+id/txtV_EstAg_cant"
+        android:layout_width="314dp"
+        android:layout_height="26dp"
+        android:layout_weight="1"
+        android:text="Cantidad de agua usada"
+        android:textAlignment="center"
+        android:textColor="#743B1E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <TableLayout
+        android:id="@+id/tab_estAg_CantAgua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginTop="130dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:background="#EEEEEE"
+                android:padding="10dp"
+                android:text="Semana"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginEnd="30dp"
+                android:background="#EEEEEE"
+                android:padding="10dp"
+                android:text="Cantidad (litros)"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="26dp"
+        android:layout_weight="1"
+        android:text="Cantidad total de agua"
+        android:textAlignment="center"
+        android:textColor="#743B1E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <TextView
+        android:id="@+id/txtV_EstAg_CantAgua"
+        android:layout_width="158dp"
+        android:layout_height="33dp"
+        android:layout_weight="1"
+        android:background="#6D9422"
+        android:hint="Litros"
+        android:textAlignment="center"
+        android:textColor="#FEFEFE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="26dp"
+        android:layout_weight="1"
+        android:text="Costo del agua consumida"
+        android:textAlignment="center"
+        android:textColor="#743B1E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TableLayout
+        android:id="@+id/tab_estAg_CostAgua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginTop="390dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TableRow>
+
+            <TextView
+                android:background="#EEEEEE"
+                android:padding="10dp"
+                android:text="Semana"
+                android:layout_marginLeft="30dp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="#EEEEEE"
+                android:padding="10dp"
+                android:text="Costo ($)"
+                android:layout_marginEnd="30dp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="26dp"
+        android:layout_weight="1"
+        android:text="Costo total del agua"
+        android:textAlignment="center"
+        android:textColor="#743B1E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <TextView
+        android:id="@+id/txtV_EstAg_CostAgua"
+        android:layout_width="158dp"
+        android:layout_height="33dp"
+        android:layout_weight="1"
+        android:background="#6D9422"
+        android:hint="$"
+        android:textAlignment="center"
+        android:textColor="#FEFEFE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826" />
+
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="26dp"
+        android:layout_weight="1"
+        android:text="Próxima fecha para medir agua"
+        android:textAlignment="center"
+        android:textColor="#743B1E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <TextView
+        android:id="@+id/txtV_EstAg_FechaAgua"
+        android:layout_width="284dp"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:hint="Fecha aproximada"
+        android:textAlignment="center"
+        android:textColor="#FEFEFE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
+
+
+    <Button
+        android:id="@+id/categorias"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#324807"
+        android:text="@string/btn_categorias"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/abono"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+    <Button
+        android:id="@+id/abono"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#324807"
+        android:text="@string/btn_abono"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
